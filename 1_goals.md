@@ -23,9 +23,9 @@ Write 2-3 sentences on the following and check it in to your repository.
 
 The focus of this project is on...
 
-1. Short goal:
+1. Short goal: Implement exact likelihood computation under a pretrained flow matching weather forecasting model, and verify it is numerically correct on a small set of samples. A successful result would be that  the computation runs end-to-end without errors and produces plausible values.
 
-2. Medium goal:
+2. Medium goal: Run the full testing pipeline on the training data: generate a large set of forecast samples, compute both RMSE and exact likelihood for each, and perform a correlation analysis. The deliverable is a clear empirical answer to whether likelihood correlates with forecast error, and whether it can serve as a proxy for uncertainty at inference time. A successful result will be a statistically meaningful (whether positive or negative) answer to this question.
 
-3. Medium goal:
+3. Medium goal: Use exact likelihood computation on held-out ground truth samples (rather than generated samples) as a diagnostic tool for the model itself. This will evaluate how well the learned generative distribution covers the true data distribution, and specifically whether the model assigns lower likelihood to rare or tail atmospheric states. 
 
